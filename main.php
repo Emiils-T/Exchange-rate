@@ -18,7 +18,7 @@ while ($matchFound == false) {
 
 $matchFound = false;
 while ($matchFound == false) {
-    $amount = (float) readline("Enter amount to exchange: ");
+    $amount = (float)readline("Enter amount to exchange: ");
     if (!is_numeric($amount) || $amount < 0) {
         echo "$amount is not a valid amount." . PHP_EOL;
     } else {
@@ -44,4 +44,3 @@ $array = json_decode($data);
 
 $result = number_format($array->$selectedCurrency->$exchangeTo * $amount, 2);
 echo "$amount $selectedCurrency to $exchangeTo is $result \n";
-
